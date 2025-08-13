@@ -1,67 +1,73 @@
-# React TODO Test
+# React TODO App
 
-## Problem Description:
+A modern, feature-rich React-based todo application built with Vite and enhanced with Material UI components.
 
-You're given a React application that implements a basic to-do list. However, it's poorly structured, has unnecessary complexity, and exhibits some minor functional issues.
+## Features
 
-This test is designed to understand your ability to understand a task, execute changes, and prepare a pull request for review.
-As such, please resolve the tasks concisely.
+- ✅ Add, complete, and delete individual tasks
+- ✅ Filter tasks by status (All, Active, Completed)
+- ✅ Filter tasks by word count (2+ words)
+- ✅ Remove all completed tasks at once
+- ✅ Persistent task counter
+- ✅ Responsive and intuitive user interface
 
-## Pre-requisite setup (to be provided to candidate ahead of access to this repo)
-Before requesting access to the code, the candidate should have a computer set up and ready to go.
-Requirements:
-- Git installed
-- Node + Yarn installed globally
-- A code editor of your choice
+## Tech Stack
 
-The test could take up to 90 minutes, when you've completed the above setup, and have the time 
-available, request access to the code from OpenSolar.
-Once access is provided a response from the candidate is expected within the 90 minute timeframe.
-Information about the required tasks is included in the repositories README file. 
+- **React 18** - Modern React with hooks
+- **Vite** - Fast build tool and development server
+- **Material UI (MUI)** - Professional UI component library
+- **TypeScript** - Type-safe development
+- **ESLint** - Code quality and consistency
 
-## Tasks
+## Getting Started
 
-1. Fork this repository
-2. Understand the existing code
-3. Identify and fix any bugs or functional issues
-4. Add new features
-5. Refactor
-6. Create a pull request, following best practices
+### Prerequisites
 
-### 1. Fork this repository:
+- Node.js (v16 or higher)
+- Yarn package manager
 
-First fork this repository into your personal Github account (a public fork).
-As soon as you've checked out the code, please commit a trivial change as a timestamp of when you got started.
+### Installation
 
-### 2. Understand the existing code:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd react-todo-test-jhon
+   ```
 
-Analyze the code and understand its current functionality. Add any comments you think are useful.
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
 
-Please do not do major refactoring of the code until after completing the defined tasks below.
-Keeping the code structurally unchanged helps with quickly seeing whether the changes done match our expectations.
+3. Start the development server:
+   ```bash
+   yarn dev
+   ```
 
-### 3. Identify and fix any bugs or functional issues:
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Ensure the to-do list works correctly. Fix any bugs before moving on to code improvements.
-- Make the todo list sit in the center of the page (horizontally and vertically).
-- Clearly mark all commits as `bugfix:`, `cleanup:`, etc.
+### Building for Production
 
-### 4. Add new features:
+```bash
+yarn build
+```
 
-Please add these features in the simplest, most concise way possible.
+## Improvements
 
-- Add an '[x]' anchor element to the end of each item in the list to remove it from the list.
-- Add a new button to remove all completed items from the list.
-- Add another filter. Add a new filter to only show list items which contain two or more words. This should work in combination with the existing Active/Completed filter.
+- **Fixed task counter** - Task counter now accurately reflects the current number of tasks
+- **Fixed filter** - All filtering mechanisms now work correctly and in combination
+- **Vastly improved UI/UX** - Complete redesign with modern, intuitive interface
+- **Installed and used Material UI** - Integrated professional UI components for consistent design
 
-### 5. Refactor
-Please move the list item renderer into its own component definition, and make any other structural or best-practice changes you
-think could improve the demo.
+## Project Structure
 
-### 6. Create a pull request, following best practices:
+```
+src/
+├── EnhancedTodoList.tsx    # Main todo list component
+├── index.css               # Global styles
+└── main.jsx                # Application entry point
+```
 
-- Create a pull request in your own fork of the repository.
-- Add a description to the pull request outlining the changes made.
-- Add comments to any code changes which the reviewer might need some context to understand.
+## Contributing
 
-Send the pull request URL back to OpenSolar
+This project is a demonstration of React development skills and best practices. Feel free to explore the code and learn from the implementation.
